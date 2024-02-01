@@ -75,19 +75,19 @@ public class DumService {
         return LinkDto.toDto(created);
     }
 
-    public List<Link> inshow(Long id) {
-        List<Link> linkList;
-
-        try {
-            linkList = (List<Link>) show().stream()
-                    .filter(dum -> dum.showFolderId().equals(id))
-                    .toList();
-        } catch (Exception e) {
-            // 로깅, 오류 추적 및 처리를 수행하십시오.
-            linkList = Collections.emptyList();
-        }
-        return linkList;
-    }
+//    public List<Link> inshow(Long id) {
+//        List<Link> linkList;
+//
+//        try {
+//            linkList = (List<Link>) show().stream()
+//                    .filter(dum -> dum.showFolderId().equals(id))
+//                    .toList();
+//        } catch (Exception e) {
+//            // 로깅, 오류 추적 및 처리를 수행하십시오.
+//            linkList = Collections.emptyList();
+//        }
+//        return linkList;
+//    }
 
     public List<LinkDto> show() {
 
